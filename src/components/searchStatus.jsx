@@ -2,7 +2,6 @@ import React from "react";
 
 const SearchStatus = ({ lengthUser }) => {
     const renderPhrase = (lengthUser) => {
-        console.log(lengthUser);
         if (lengthUser >= 5 || lengthUser === 1) {
             return (
                 <span className="badge bg-primary">
