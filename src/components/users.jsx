@@ -28,9 +28,12 @@ const Users = ({ users, onDelete, onToggleBookMark }) => {
     const handlePageChange = (pageIndex) => {
         setCurrentPage(pageIndex);
     };
-
+    console.log(selectedProf);
     const filteredUsers = selectedProf
-        ? users.filter((user) => user.profession === selectedProf)
+        ? users.filter((user) => {
+            console.log(selectedProf);
+            return user.profession._id === selectedProf._id;
+        })
         : users;
 
     const count = filteredUsers.length;
