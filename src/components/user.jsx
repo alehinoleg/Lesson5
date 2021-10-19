@@ -12,15 +12,7 @@ const User = ({ user, onDelete, onToggleBookMark }) => {
     return (
         <tr key={user._id}>
             <td>{user.name}</td>
-            <td>
-                {user.qualities.map((quality) => (
-                    <Qualitie
-                        quality={quality}
-                        key={quality._id}
-                        styleQualities={styleQualities}
-                    />
-                ))}
-            </td>
+            <td></td>
             <td>{user.profession.name}</td>
             <td>{user.completedMeetings}</td>
             <td>{user.rate}/5</td>
